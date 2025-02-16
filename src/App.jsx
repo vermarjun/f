@@ -12,8 +12,8 @@ import TrendingPage from "./pages/trending/TrendingPages";
 
 function App() {
   return (
-    <Router>
       <BrowserRouter>
+    <Router>
       <div className="min-h-screen bg-gray-50">
         <Navbar />
         <Routes>
@@ -27,8 +27,8 @@ function App() {
           <Route path="/trending" element={<TrendingPage />} />
         </Routes>
       </div>
-      </BrowserRouter>
     </Router>
+      </BrowserRouter>
   );
 }
 
