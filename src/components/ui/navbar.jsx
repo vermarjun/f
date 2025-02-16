@@ -9,7 +9,6 @@ export function Navbar() {
   const isAuthenticated = true; // TODO: Replace with actual auth state
 
   const handleLogout = () => {
-    // TODO: Implement logout logic
     navigate('/auth');
   };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { Navbar } from "./components/ui/navbar";
 import LandingPage from "./pages/landing/LandingPage";
 import AuthPage from "./pages/auth/AuthPage";
@@ -13,9 +13,9 @@ import TrendingPage from "./pages/trending/TrendingPages";
 function App() {
   return (
       <BrowserRouter>
+          <Navbar />
         <Routes>
-      <div className="min-h-screen bg-gray-50">
-        <Navbar />
+      {/* <div className="min-h-screen bg-gray-50"> */}
           <Route path="/" element={<LandingPage />} />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/channels" element={<ChannelsPage />} />
           <Route path="/twitter" element={<TwitterSentimentPage />} />
           <Route path="/trending" element={<TrendingPage />} />
-      </div>
+      {/* </div> */}
         </Routes>
       </BrowserRouter>
   );
